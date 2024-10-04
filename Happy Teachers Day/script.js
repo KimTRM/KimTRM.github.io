@@ -1,4 +1,4 @@
-    const txt = `Happy Teachers Day! Sir Marvin`;
+    const txt = `Happy Teachers Day!`;
 
     const outputDiv = document.getElementById('text');
 
@@ -11,4 +11,6 @@
         clearInterval(timerId);
       }
   },50);
-  
+
+  var audio = $('.song')[0];
+  audio.play();

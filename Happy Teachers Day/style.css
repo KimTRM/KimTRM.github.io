@@ -1,6 +1,15 @@
 body
 {
     background-color: rgb(36, 36, 36);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('res/Gabaldon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f3f3f3;
+
+    margin: 0;
+    padding: 0;
 }
 
 #content
@@ -27,9 +36,24 @@ body
     animation: fadeIn 2s ease-in forwards;
 }
 
+@keyframes scaleUp {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+.name
+{
+    font-size: 150%;
+    animation: scaleUp 2s ease-in-out;
+}
+
 #text  
 {
-    font-size: 30px;
+    font-size: 350%;
     color: rgb(251, 251, 251);
     font-family: monospace;
     border-right: 5px solid;
