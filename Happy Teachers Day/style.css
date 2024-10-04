@@ -12,13 +12,21 @@ body
     padding: 0;
 }
 
-#content
-{
-    display: flex;
+#content {
+    display: none; /* Initially hidden */
     flex-direction: column;
     height: 100vh;
     align-items: center;
     justify-content: center;
+}
+
+#Button
+{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 100vh;          /* Full height of the viewport */
+    margin: 0;   
 }
 
 .Title
@@ -34,6 +42,45 @@ body
     
     opacity: 0;
     animation: fadeIn 2s ease-in forwards;
+
+}
+
+.Button
+{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+
+    padding: 5px 25px;
+    color: rgb(172, 13, 13);
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+Button:hover
+{
+    background-color: black;
+}
+
+.name
+{
+    color: rgb(251, 251, 251);
+    font-size: 150%;
+    animation: scaleUp 2s ease-in-out;
+}
+
+#text  
+{
+    font-size: 200%;
+    color: rgb(251, 251, 251);
+    font-family: monospace;
+    border-right: 5px solid;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(30),
+        cursor .9s step-end infinite;
 }
 
 @keyframes scaleUp {
@@ -45,24 +92,6 @@ body
     }
   }
 
-.name
-{
-    font-size: 150%;
-    animation: scaleUp 2s ease-in-out;
-}
-
-#text  
-{
-    font-size: 350%;
-    color: rgb(251, 251, 251);
-    font-family: monospace;
-    border-right: 5px solid;
-    overflow: hidden;
-    animation: 
-        typing 2s steps(30),
-        cursor .9s step-end infinite;
-}
-
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -72,3 +101,4 @@ body
 {
     50% { border-color: transparent }
 }
+
