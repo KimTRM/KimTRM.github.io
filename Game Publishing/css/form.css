@@ -18,14 +18,26 @@ body
     background-attachment: fixed;
 }
 
+h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#txtGameDescription
+{
+    height: 50px;
+}
+
 .box-container
 {
-    
     background-color: rgba(47, 47, 47, 0.688);
 
     outline: auto;
     outline-color: rgb(255, 255, 255);
     outline-width: 5px;
+
+    border-radius: 20px;
 
     margin: 50px;
     padding: 5%;
@@ -34,7 +46,7 @@ body
 
 .info-container
 {
-    /* min-width: 100px; */
+    
 
     background-color: rgba(72, 72, 72, 0.679);
 
