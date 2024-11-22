@@ -8,7 +8,7 @@
 body
 {
     font-family: 'Font';
-    color: rgb(231, 231, 231);
+    color: rgb(215, 215, 215);
 
     background-color: rgb(77, 70, 118);
     background-image: url('../res/images/Background.gif');
@@ -27,6 +27,7 @@ h1
 {
     font-size: 60px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 
