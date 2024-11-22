@@ -23,7 +23,8 @@
                             <h1>Game Publishing</h1>
                         </div>
 
-                        <div class="GameInformation">
+                        <!-- Game Information -->
+                        <div class="info-container">
 
                             <h3>Game Information</h3>
 
@@ -43,17 +44,17 @@
                                     <!-- Game Genre -->
                                     <div class="col-md-4">
                                         <div class="form-floating">
-                                            <input list="data" class="form-control" id="txtGameTitle" required
-                                                placeholder="-" />
-                                            <label for="floatingInput">Game Genre</label>
+                                            <input list="data" class="form-control" id="txtGameGenre" required placeholder="-" />
+                                            
                                             <datalist id="data">
-                                                <option value="Action"></option>
-                                                <option value="Adventure"></option>
-                                                <option value="RPG"></option>
+                                                <option value="Action">Action</option>
+                                                <option value="Adventure">Adventure</option>
+                                                <option value="RPG">RPG</option>
                                                 <option value="Simulation"></option>
                                                 <option value="Strategy"></option>
                                             </datalist>
 
+                                            <label for="floatingInput">Game Genre</label>
                                             <div class="invalid-feedback">Game Genre is required</div>
                                         </div>
                                     </div>
@@ -71,9 +72,9 @@
                                 </div>
 
                                 <!-- Game Description -->
-                                <div class="col">
+                                <div class="col-md-12">
                                     <div class="form-floating">
-                                        <textarea name="Game Description" class="form-control" id="txtGameDescription"required placeholder="-"></textarea>
+                                        <textarea name="Game Description" class="form-control" id="txtGameDescription" required placeholder="-"></textarea>
 
                                         <label for="floatingInput">Game Description</label>
                                         <div class="invalid-feedback">Game Description is required</div>
@@ -83,7 +84,8 @@
 
                         </div>
 
-                        <div class="GameUpload">
+                        <!-- Game Upload -->
+                        <div class="info-container">
                             <div class="row g-4">
 
                                 <h3>Game Upload</h3>
