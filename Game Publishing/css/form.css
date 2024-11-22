@@ -11,7 +11,12 @@ body
     color: rgb(231, 231, 231);
 
     background-color: rgb(77, 70, 118);
-    background-image:  url('../res/images/Background.gif');
+    background-image: url('../res/images/Background.gif');
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     background-size: cover;
     background-position: center;
@@ -24,36 +29,54 @@ h1
     font-weight: bold;
 }
 
-#txtGameDescription
-{
-    height: 50px;
-}
 
 .box-container
 {
     background-color: rgba(47, 47, 47, 0.688);
 
-    outline: auto;
-    outline-color: rgb(255, 255, 255);
-    outline-width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    outline: auto;
+    outline-width: 5px;
+    outline-color: rgb(24, 24, 24);
     border-radius: 20px;
 
-    margin: 50px;
+    margin: 5%;
     padding: 5%;
     outline-style: double;
 }
 
 .info-container
 {
-    
+    border-radius: 10px;
 
     background-color: rgba(72, 72, 72, 0.679);
 
     outline: auto;
-    outline-color: rgb(255, 255, 255);
+    outline-color: rgb(24, 24, 24);
     
-    margin: 10px;
-    padding: 10px;
-    outline-style: dashed;
+    margin: 1%;
+    padding: 2%;
+    outline-style: solid;
+
+    box-shadow: solid 50px rgb(169, 169, 169);
+}
+
+.button
+{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: rgb(172, 13, 13);
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+button:hover
+{
+    background-color: black;
 }
