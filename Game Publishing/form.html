@@ -33,7 +33,7 @@
                                 <div class="row g-4">
 
                                     <!-- Game Title -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="txtGameTitle" required
                                                 placeholder="-" />
@@ -43,7 +43,7 @@
                                     </div>
 
                                     <!-- Game Genre -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="form-floating">
                                             <input list="data" class="form-control" id="txtGameGenre" required placeholder="-" />
                                             
@@ -60,13 +60,41 @@
                                         </div>
                                     </div>
 
+                                </div>
+
+                                <div class="row g-4">
+
                                     <!-- Game Release Date -->
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="datetime-local" class="form-control" id="txtGameTitle" required
                                                 placeholder="-" />
                                             <label for="floatingInput">Date Release</label>
                                             <div class="invalid-feedback">Game Release Date is required</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Game Play Time -->
+                                    <div class="col-md-3">
+                                        <div class="form-floating">
+                                            <input type="number" class="form-control" id="txtPlayNum" required
+                                                placeholder="-" />
+                                            <label for="floatingInput">Game Play Time</label>
+                                            <div class="invalid-feedback">Game Play Time is required</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="cboSchool" required
+                                            aria-label="Floating label select example">
+                                            <option selected disabled value="">Select Time</option>
+                                            <option value="">Minutes</option>
+                                            <option value="">Hours</option>
+
+                                        </select>
+                                            <label for="floatingInput">Time</label>
+                                            <div class="invalid-feedback">Game Play Time is required</div>
                                         </div>
                                     </div>
 
