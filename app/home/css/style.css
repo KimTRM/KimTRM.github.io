@@ -116,26 +116,3 @@ h4 {
     color: #dc143c;
     margin-bottom: 0.5rem;
 }
-
-/* CONTACT */
-.contact {
-    background-color: rgba(20, 20, 20, 0.8);
-}
-
-.contact .btn {
-    margin-top: 1rem;
-}
-
-.socials {
-    margin-top: 1rem;
-}
-
-.socials a {
-    color: #dc143c;
-    margin-right: 1rem;
-    text-decoration: none;
-}
-
-.socials a:hover {
-    text-decoration: underline;
-}
