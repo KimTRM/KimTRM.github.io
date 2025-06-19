@@ -21,24 +21,6 @@ h4 {
     letter-spacing: 1px;
 }
 
-/* HERO SECTION */
-.hero {
-    text-align: center;
-    background-color: rgba(18, 18, 18, 0.85);
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.tagline {
-    font-size: 1.2rem;
-    color: #cccccc;
-    margin-bottom: 1rem;
-}
-
 /* BUTTONS */
 .btn,
 .btn-outline,

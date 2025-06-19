@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./home/components/Header";
+import Header from "./home/sections/Header";
 
 export const metadata: Metadata = {
   title: "KLTL Studios",
@@ -18,37 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <header className="main-header">
-          <Image
-            src="/icon/Icon.svg"
-            width={160}
-            height={100}
-            alt="KLTL Studios Logo"
-            className="logo"
-          />
-          <button
-            className="hamburger"
-            aria-label="Open navigation"
-            onClick={() => setOpen(!open)}
-          >
-            &#9776;
-          </button>
-          <nav className="header-nav">
-            <Link href="/" className="default-btn">
-              <h1>Home</h1>
-            </Link>
-            <Link href="/about" className="default-btn">
-              <h1>About</h1>
-            </Link>
-            <Link href="/projects" className="default-btn">
-              <h1>My Projects</h1>
-            </Link>
-          </nav>
-        </header> */}
-
         <Header />
         {children}
-
         <footer className="nav-bottom">
           <div className="nav-bottom-left">
             <h2> &copy; 2025 KLTL Studios.</h2>

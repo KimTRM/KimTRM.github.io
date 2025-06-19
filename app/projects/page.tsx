@@ -1,4 +1,4 @@
-import ProjectsSection from "../home/components/ProjectsSection";
+import ProjectsSection from "../home/sections/ProjectsSection";
 
 export default function Projects() {
     return (

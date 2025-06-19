@@ -92,7 +92,7 @@ body {
 
 .default-btn {
   background: #bbb;
-  color: #444;
+  color: #373737;
   font-family: "Share Tech Mono", "Consolas", monospace;
   font-size: 1.2rem;
   font-weight: bold;
@@ -106,7 +106,7 @@ body {
 }
 
 .default-btn:hover {
-  background: #fff;
+  background: #2f2f2f;
   color: #b33a3a;
   box-shadow: 1px 1px 0 #b33a3a;
 }
