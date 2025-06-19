@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Image from "next/image";
-import Link from "next/link";
+import Header from "./home/components/Header";
 
 export const metadata: Metadata = {
   title: "KLTL Studios",
@@ -19,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header className="main-header">
+        {/* <header className="main-header">
           <Image
             src="/icon/Icon.svg"
             width={160}
@@ -27,6 +26,13 @@ export default function RootLayout({
             alt="KLTL Studios Logo"
             className="logo"
           />
+          <button
+            className="hamburger"
+            aria-label="Open navigation"
+            onClick={() => setOpen(!open)}
+          >
+            &#9776;
+          </button>
           <nav className="header-nav">
             <Link href="/" className="default-btn">
               <h1>Home</h1>
@@ -38,17 +44,22 @@ export default function RootLayout({
               <h1>My Projects</h1>
             </Link>
           </nav>
-        </header>
+        </header> */}
 
+        <Header />
         {children}
 
         <footer className="nav-bottom">
           <div className="nav-bottom-left">
             <h2> &copy; 2025 KLTL Studios.</h2>
           </div>
-          {/* <div className="nav-bottom-right">
-            <a href="#">Privacy</a> | <a href="#">Terms</a>
-          </div> */}
+          <div className="nav-bottom-right">
+            <a href="https://github.com/kimtrm" target="_blank">GitHub</a>
+            |
+            <a href="https://linkedin.com/in/kimtrm" target="_blank">LinkedIn</a>
+            |
+            <a href="https://youtube.com/@kltlstudios" target="_blank">YouTube</a>
+          </div>
         </footer>
       </body>
     </html>

@@ -110,28 +110,89 @@ body {
   color: #b33a3a;
   box-shadow: 1px 1px 0 #b33a3a;
 }
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #b33a3a;
+  cursor: pointer;
+  margin-left: auto;
+}
+.hamburger:hover{
+  color: #d95959;
+}
 
-/* Responsive styles */
+/* Responsive hamburger menu */
 @media (max-width: 600px) {
-  .main-header {
-    padding: 0.5rem 1vw;
-  }
 
-  .header-left {
-    padding: 0.5rem 1vw;
-    border-radius: 1rem;
-    box-shadow: 3px 3px 0 #b33a3a;
+  .hamburger {
+    display: block;
+    z-index: 201;
+    position: relative;
+    /* Move possiton to the left abit */
+    margin-right: 5%;
   }
-
   .header-nav {
-    align-items: flex-end;
-    gap: 0.5rem;
+    display: none;
   }
-
-  .nav-btn {
-    font-size: 1.1rem;
-    border-radius: 0.5rem;
-    padding: 0.2rem 2vw;
-    box-shadow: 3px 3px 0 #888;
+  .header-nav.floating-nav.open {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px; /* adjust as needed */
+    right: 16px;
+    width: 80vw;
+    max-width: 200px;
+    max-height: 30vh;
+    background: #272727f5;
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    z-index: 200;
+    padding: 2rem 2rem;
+    gap: 1rem;
+    animation: fadeIn 0.2s;
+  }
+  .default-btn{
+    width: 110%;
+    text-align: center;
+    background: #bbb;
+      color: #444;
+      font-family: "Share Tech Mono", "Consolas", monospace;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 0.7rem;
+      padding: 0.5rem 2vw;
+      box-shadow: 3px 3px 0 #888;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      white-space: nowrap;
+  }
+    .main-header {
+      padding: 0.5rem 1vw;
+    }
+  
+    .header-left {
+      padding: 0.5rem 1vw;
+      border-radius: 1rem;
+      box-shadow: 3px 3px 0 #b33a3a;
+    }
+  
+    .header-nav {
+      align-items: flex-end;
+      gap: 0.5rem;
+    }
+  
+    .nav-btn {
+      font-size: 1.1rem;
+      border-radius: 0.5rem;
+      padding: 0.2rem 2vw;
+      box-shadow: 3px 3px 0 #888;
+    }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px);}
+    to { opacity: 1; transform: translateY(0);}
   }
 }
