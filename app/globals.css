@@ -28,8 +28,6 @@ body {
 }
 
 .main-header {
-  position: sticky;
-  top: 0;
   display: flex;
   max-height: 10vh;
   justify-content: space-between;
