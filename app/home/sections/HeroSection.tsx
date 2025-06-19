@@ -1,13 +1,18 @@
 import "../css/style.css"
 import "../css/HeroSection.css"
+import Image from "next/image";
 
 export default function HeroSection() {
     return (
         <>
             <section className="hero">
-                <div className="container">
-                    <h1>Kim Louise Labrador</h1>
-                    <p className="tagline">Code. Create. Connect. Developer · Designer · Musician</p>
+                <div className="containerh">
+                    <div className="hero-circle">
+                        <Image src="/DSC_1453.png" alt="Hero Image" width={300} height={300} className="hero-image" />
+                    </div>
+                    <h1><b>Kim Louise Labrador</b></h1>
+                    <p className="tagline">Code. Create. Connect.</p>
+                    <p className="tagline">Developer · Designer · Musician</p>
                     <div className="hero-buttons">
                         <a href="#portfolio" className="btn">View Portfolio</a>
                         <a href="#contact" className="btn-outline">Contact Me</a>
