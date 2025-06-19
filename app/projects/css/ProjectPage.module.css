@@ -1,0 +1,96 @@
+.wrapper {
+    background: url("/res/star-bg.png") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+}
+
+.container {
+    background-color: rgba(18, 18, 18, 0.85);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 1000px;
+    margin: auto;
+    color: #f2f2f2;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.tagList {
+    margin-bottom: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background: #333;
+    border: 1px solid #dc143c;
+    border-radius: 20px;
+    color: #dc143c;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: #dc143c;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff3c5c;
+}
+
+.btnOutline {
+    background: transparent;
+    border: 2px solid #dc143c;
+    color: #dc143c;
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btnOutline:hover {
+    background: #dc143c;
+    color: white;
+}

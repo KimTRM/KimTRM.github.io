@@ -1,10 +1,69 @@
-export  default function Project100() {
+import styles from "../css/ProjectPage.module.css";
+import Head from "next/head";
+import Image from "next/image";
+
+const project = {
+    title: "Project 100",
+    subtitle: "An RPG to Learn Programming with Block Code",
+    description: `
+    Project 100 is a story-driven learning game that teaches programming fundamentals
+    using a fun RPG format. It's developed using Godot and designed for high school
+    students to learn variables, loops, conditions, and logic using visual blocks.
+`,
+    tags: [
+        "Godot",
+        "Block-Based Coding",
+        "Educational Game",
+        "RPG",
+    ],
+    image: "/res/Project100_Icon.svg",
+    github: "https://github.com/KimTRM/PROJECT-100",
+    playLink: "/games/project-100/index.html", // if hosted locally
+};
+
+export default function ProjectPage() {
     return (
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-                <h1 className="text-4xl font-bold">Project 100</h1>
-                <p className="text-lg">A Game that teaches the basics of programming.</p>
+        <>
+            <Head>
+                <title>{project.title} | KLTL Studios</title>
+            </Head>
+            <main className={styles.wrapper}>
+                <div className={styles.container}>
+                    <h1 className={styles.title}>{project.title}</h1>
+                    <p className={styles.subtitle}>{project.subtitle}</p>
+                    <p className={styles.description}>{project.description}</p>
+                    <Image
+                        width={100}
+                        height={100}
+                        src={project.image}
+                        alt={project.title}
+                        className={styles.banner}
+                    />
+
+                    <div className={styles.tagList}>
+                        {project.tags.map((tag, index) => (
+                            <span key={index} className={styles.tag}>
+                                #{tag}
+                            </span>
+                        ))}
+                    </div>
+
+                    <div className={styles.links}>
+                        <a
+                            href={project.github}
+                            target="_blank"
+                            className={styles.btn}>
+                            View on GitHub
+                        </a>
+                        {/* <a
+                            href={project.playLink}
+                            target="_blank"
+                            className={styles.btnOutline}>
+                            Play Demo
+                        </a> */}
+                    </div>
+                </div>
             </main>
-        </div>
+        </>
     );
 }

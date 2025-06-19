@@ -1,15 +1,30 @@
 import ProjectsSection from "../home/sections/ProjectsSection";
 
+const projects = [
+    {
+        title: "KnowledgeSweeper",
+        description: "A quiz-style game that makes learning Java engaging and fun.",
+        image: "/res/KnowledgeSweeper_Icon.svg",
+        link: "projects/KnowledgeSweeper",
+    },
+    {
+        title: "Project 100",
+        description: "An educational RPG that teaches programming through block-based puzzles.",
+        image: "/res/Project100_Icon.svg",
+        link: "projects/Project100",
+    },
+    {
+        title: "Design Showcase",
+        description: "From UI/UX to visual branding, see how I bring ideas to life through design.",
+        image: "/res/icon/KLTL_Studios.svg",
+        link: "projects/design",
+    },
+];
+
 export default function Projects() {
     return (
         <>
-            <div className="items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-                <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-                    <h1 className="text-4xl font-bold">Projects</h1>
-                    <p className="text-lg">Here are some of my projects.</p>
-                </main>
-            </div>
-            <ProjectsSection />
+            <ProjectsSection projects={projects} />
         </>
     );
 }
