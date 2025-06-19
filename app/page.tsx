@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: "KnowledgeSweeper",
-    description: "A quiz-style game that makes learning Java engaging and fun.",
+    description: "Minesweeper but it has a twist, a quiz to keep your life",
     image: "/res/coverimage.png",
     link: "projects/KnowledgeSweeper",
   },

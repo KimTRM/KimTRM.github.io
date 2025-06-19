@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ProjectPage() {
     const project = {
-        title: "KnowledgeSweeper",
+        title: "Knowledge Sweeper",
         subtitle: "Minesweeper but it has a twist, a quiz to keep your life",
         description:
             `This game is just like a normal Minesweeper but it has a twist where if you pick a square with a bomb in it a question will pop up when you answer it correctly you don’t lose a life and you can continue but if answered wrong you lose a life as a consequence.`,
