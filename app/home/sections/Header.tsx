@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header className="main-header">
             <Image
-                src="/icon/Icon.svg"
+                src="res/icon/Icon.svg"
                 width={160}
                 height={100}
                 alt="KLTL Studios Logo"
