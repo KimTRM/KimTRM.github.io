@@ -18,10 +18,10 @@ const projects = [
     link: "projects/KnowledgeSweeper",
   },
   {
-    title: "Design Showcase",
-    description: "From UI/UX to visual branding, see how I bring ideas to life through design.",
+    title: "Website Clone Redesign",
+    description: "A website clone redesign for Senate of the Philippines - 19th Congress",
     image: "/res/icon/KLTL_Studios.svg",
-    link: "projects/design",
+    link: "/Clone-Redesign/index.html",
   },
 ];
 
