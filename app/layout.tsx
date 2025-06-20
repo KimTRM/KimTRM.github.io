@@ -27,7 +27,7 @@ export default function RootLayout({
           <div className="nav-bottom-right">
             <a href="https://github.com/kimtrm" target="_blank">GitHub</a>
             |
-            <a href="https://linkedin.com/in/kimtrm" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/kim-louise-labrador/" target="_blank">LinkedIn</a>
             |
             <a href="https://youtube.com/@kltlstudios" target="_blank">YouTube</a>
           </div>
