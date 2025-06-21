@@ -11,13 +11,15 @@ export default function Header() {
 
     return (
         <header className="main-header">
-            <Image
-                src="/res/icon/Icon.svg"
-                width={160}
-                height={100}
-                alt="KLTL Studios Logo"
-                className="logo"
-            />
+            <Link href="/">
+                <Image
+                    src="/res/icon/Icon.svg"
+                    width={160}
+                    height={100}
+                    alt="KLTL Studios Logo"
+                    className="logo"
+                />
+            </Link>
             <button
                 className="hamburger"
                 aria-label="Open navigation"
