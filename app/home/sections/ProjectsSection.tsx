@@ -20,7 +20,6 @@ export default function ProjectsSection(props: Props) {
                     <h2>My Projects</h2>
 
                     <div className="project-grid">
-
                         {props.projects.map((project, idx) => (
                             <ProjectCardComponent
                                 key={idx}
